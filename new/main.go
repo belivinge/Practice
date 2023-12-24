@@ -40,9 +40,6 @@ func main() {
 		fmt.Println("Visiting", request.URL.String())
 	})
 	collector.Visit("https://www.factretriever.com/rhino-facts")
-	// enc := json.NewEncoder(os.Stdout)
-	// enc.SetIndent("", " ")
-	// enc.Encode(allFacts)
 
 	writeJSON(allFacts)
 }
